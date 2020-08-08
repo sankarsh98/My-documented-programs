@@ -8,13 +8,10 @@ class infixtopostfix {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int t=sc.nextInt();
-        // sc.nextLine();
         while(t-->0){
             int n=sc.nextInt();
             sc.nextLine();
             String s=sc.nextLine();
-            // sc.nextLine();
-            System.out.println(s);
             String post="";
             Stack<Character> stack=new Stack<>();
             HashMap<Character,Integer> op=new HashMap<>();
@@ -25,7 +22,6 @@ class infixtopostfix {
             op.put('^',2);
             stack.push('(');
             s=s+")";
-            System.out.println(s);
             for(int i=0;i<n+1;i++){
                 char ch=s.charAt(i);
                 // System.out.println(ch);
